@@ -1,0 +1,21 @@
+{
+  "name": "angular-observe",
+  "version": "0.0.1",
+  "description": "Observe properties on arbitrary javascript objects, similar to the $watch mechanism but more efficient.",
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "karma": "^0",
+    "karma-chrome-launcher": "^0",
+    "karma-coverage": "^0",
+    "karma-firefox-launcher": "^0",
+    "karma-jasmine": "^0.3",
+    "karma-phantomjs-launcher": "^0",
+    "node-karma-wrapper": "^0"
+  },
+  "main": "angular-observe.js",
+  "repository": {
+    "type": "https",
+    "url": "https://github.com/tinydesk/angular-observe"
+  },
+  "license": "MIT"
+}

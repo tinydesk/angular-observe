@@ -107,6 +107,10 @@ if (typeof module !== "undefined" && typeof exports !== "undefined" && module.ex
 					cb();
 					self.properties(newValue, nonEmptyPaths, cb);
 				});
+
+				if (obj[prop] !== undefined) {
+					self.properties(obj[prop], nonEmptyPaths, cb);
+				}
 			});
 		};
 
