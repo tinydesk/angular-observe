@@ -1,6 +1,6 @@
 /* commonjs package manager support (eg componentjs) */
 if (typeof module !== "undefined" && typeof exports !== "undefined" && module.exports === exports){
-	module.exports = 'ui.router';
+	module.exports = 'tinydesk.observe';
 }
 
 (function (window, angular) {
