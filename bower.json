@@ -1,0 +1,10 @@
+{
+  "name": "angular-observe",
+  "homepage": "https://github.com/tinydesk/angular-observe",
+  "authors": [
+    "Hannes Widmoser <widmoser@gmail.com>"
+  ],
+  "description": "Observe properties on arbitrary javascript objects, similar to the $watch mechanism but more efficient.",
+  "main": "angular-observe.js",
+  "license": "MIT"
+}
