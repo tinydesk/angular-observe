@@ -1,6 +1,6 @@
 {
   "name": "angular-observe",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Observe properties on arbitrary javascript objects, similar to the $watch mechanism but more efficient.",
   "devDependencies": {
     "jasmine-core": "^2.4.1",
