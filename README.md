@@ -1,4 +1,4 @@
-![](https://badge-size.herokuapp.com/tinydesk/angular-observe/master/angular-observe.js.svg?compression=gzip)
+![](https://badge-size.herokuapp.com/tinydesk/angular-observe/master/dist/angular-observe.min.js.svg?compression=gzip&label=minified)
 
 # angular-observe
 
