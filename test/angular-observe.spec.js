@@ -41,6 +41,16 @@ describe('Observe', function() {
       expect(cb).not.toHaveBeenCalled();
     });
 
+    it('can be unregistered', function() {
+      var x = { a: 3 };
+      var cb = jasmine.createSpy('callback');
+      var unregister = Observe.property(x, 'a', cb);
+      x.a = 2;
+      unregister();
+      x.a = 4;
+      expect(cb).toHaveBeenCalledTimes(1);
+    });
+
   });
 
   describe('properties', function() {
@@ -97,6 +107,16 @@ describe('Observe', function() {
       var cb = jasmine.createSpy('callback');
       Observe.properties(x, ['a.b', 'a.c'], cb);
       expect(cb).not.toHaveBeenCalled();
+    });
+
+    it('can be unregistered', function() {
+      var x = {a: {b: 3, c: {e: 9, f: 'x'}, d: false}};
+      var cb = jasmine.createSpy('callback');
+      var unregister = Observe.properties(x, ['a.b', 'a.c.e'], cb);
+      x.a.b = 2;
+      unregister();
+      x.a.c.e = 4;
+      expect(cb).toHaveBeenCalledTimes(1);
     });
 
   });

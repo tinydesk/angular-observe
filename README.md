@@ -58,6 +58,15 @@ obj.z.a = 3; // triggers callback
 obj.z = {...}; // triggers callback
 obj.x = 2; // triggers callback
 
+// unregister properties by executing the corresponding callback
+var unregister = Observe.property(obj, 'x', function(v) {
+  console.log(v);
+});
+
+obj.x = 2; // triggers callback
+unregister();
+obj.x = 4; // does not trigger callback
+
 ```
 
 ## Motivation
