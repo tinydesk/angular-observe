@@ -1,6 +1,6 @@
 {
   "name": "angular-observe",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "Observe properties on arbitrary javascript objects, similar to the $watch mechanism but more efficient.",
   "devDependencies": {
     "gulp": "^3.9.1",

@@ -5,7 +5,7 @@
     "Hannes Widmoser <widmoser@gmail.com>"
   ],
   "description": "Observe properties on arbitrary javascript objects, similar to the $watch mechanism but more efficient.",
-  "main": "dist/angular-observe.min.js",
+  "main": "src/angular-observe.js",
   "license": "MIT",
   "dependencies": {
     "angular": "^1",
